@@ -1,10 +1,10 @@
 from pygame import draw, color, Surface
 from pygame.locals import Rect
 
-from src.abstract.status_element import StatusElement
-from src.abstract.actor import Actor
+from ..abstract.status_element import StatusElement
+from ..abstract.actor import Actor
 
-from src.classes.coordinate import Coordinate
+from .coordinate import Coordinate
 
 class HealthBar(StatusElement):
     """

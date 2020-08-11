@@ -2,9 +2,9 @@ from abc import ABC
 from pygame import color, font
 from pygame.surface import Surface
 
-from src.abstract.actor import Actor
+from .actor import Actor
 
-from src.classes.coordinate import Coordinate
+from ..classes.coordinate import Coordinate
 
 class StatusElement(ABC):
     """

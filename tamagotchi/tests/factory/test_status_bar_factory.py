@@ -1,9 +1,15 @@
 import pytest
 
-from src.factory.status_bar_factory import StatusBarFactory
+from tamagotchi.factory.status_bar_factory import StatusBarFactory
+from tamagotchi.classes.state_bars import HealthBar, EnergyBar
+from tamagotchi.classes.coordinate import Coordinate
 
-from src.classes.state_bars import HealthBar, EnergyBar
-from src.classes.coordinate import Coordinate
+
+#from ...factory.status_bar_factory import StatusBarFactory
+
+#from ...classes.state_bars import HealthBar, EnergyBar
+#from ...classes.coordinate import Coordinate
+
 
 class TestStatusBarFactory:
 

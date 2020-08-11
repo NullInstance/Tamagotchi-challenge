@@ -13,7 +13,7 @@ You may also like to create a virtual environment to run it but it is not necess
 
 From the base of the Tamagotchi Challenge directory, you can run
 
-`pytest`
+`python3 setup.py test`
 
 This will run all the available unit tests and will make sure the correct packages are accessible.
 
@@ -21,7 +21,8 @@ This will run all the available unit tests and will make sure the correct packag
 
 Run in console
 
-`python3 tamagotchi.py`
+`python3 setup.py install`
+`python3 -m tamagotchi`
 
 ## Controls
 

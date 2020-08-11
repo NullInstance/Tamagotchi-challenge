@@ -1,6 +1,6 @@
-from src.abstract.consumable import Consumable
+from ..abstract.consumable import Consumable
 
-from src.classes.food import Pear, Apple, Strawberry
+from ..classes.food import Pear, Apple, Strawberry
 
 class ConsumableFactory:
     """

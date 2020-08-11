@@ -1,4 +1,4 @@
-from src.enums.direction import Direction
+from ..enums.direction import Direction
 
 
 class Coordinate:

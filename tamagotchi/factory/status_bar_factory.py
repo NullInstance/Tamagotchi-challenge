@@ -1,7 +1,7 @@
-from src.abstract.status_element import StatusElement
+from ..abstract.status_element import StatusElement
 
-from src.classes.state_bars import HealthBar, EnergyBar
-from src.classes.coordinate import Coordinate
+from ..classes.state_bars import HealthBar, EnergyBar
+from ..classes.coordinate import Coordinate
 
 
 class StatusBarFactory:

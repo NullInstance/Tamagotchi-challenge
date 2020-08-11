@@ -5,7 +5,7 @@
 
 import pygame
 
-from src.classes.game_board import GameBoard
+from tamagotchi.classes import GameBoard
 
 
 if __name__ == "__main__":

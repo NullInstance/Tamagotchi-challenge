@@ -2,19 +2,21 @@ import pygame
 
 from pygame.surface import Surface
 
-from src.classes.food_inventory import FoodInventory
-from src.classes.coordinate import Coordinate
-from src.classes.pet import Pet
+# from . import FoodInventory, Coordinate, Pet
 
-from src.abstract.actor import Actor
-from src.abstract.consumable import Consumable
-from src.abstract.status_element import StatusElement
+from .pet import Pet
+from .food_inventory import FoodInventory
+from .coordinate import Coordinate
 
-from src.enums.direction import Direction
-from src.enums.actor_state import ActorState
+from ..abstract.actor import Actor
+from ..abstract.consumable import Consumable
+from ..abstract.status_element import StatusElement
 
-from src.factory.consumable_factory import ConsumableFactory
-from src.factory.status_bar_factory import StatusBarFactory
+from ..enums.direction import Direction
+from ..enums.actor_state import ActorState
+
+from ..factory.consumable_factory import ConsumableFactory
+from ..factory.status_bar_factory import StatusBarFactory
 
 class GameBoard:
     """
