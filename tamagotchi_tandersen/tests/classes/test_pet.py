@@ -1,12 +1,12 @@
 import pytest
 
-from tamagotchi.classes.pet import Pet
-from tamagotchi.classes.coordinate import Coordinate
+from tamagotchi_tandersen.classes.pet import Pet
+from tamagotchi_tandersen.classes.coordinate import Coordinate
 
-from tamagotchi.enums.actor_state import ActorState
-from tamagotchi.enums.age import Age
+from tamagotchi_tandersen.enums.actor_state import ActorState
+from tamagotchi_tandersen.enums.age import Age
 
-from tamagotchi.abstract.consumable import Consumable
+from tamagotchi_tandersen.abstract.consumable import Consumable
 
 
 class ExampleFood(Consumable):

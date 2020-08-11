@@ -1,6 +1,6 @@
 import pytest
 
-from tamagotchi.classes.coordinate import Coordinate
+from tamagotchi_tandersen.classes.coordinate import Coordinate
 
 
 class TestCoordinate:

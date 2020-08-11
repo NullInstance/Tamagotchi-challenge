@@ -21,7 +21,7 @@ class Pear(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-pear.png'))
+        image_to_use = image.load(resource_filename('tamagotchi_tandersen', 'assets/pixel-pear.png'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:
@@ -79,7 +79,7 @@ class Apple(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-apple.jpg'))
+        image_to_use = image.load(resource_filename('tamagotchi_tandersen', 'assets/pixel-apple.jpg'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:
@@ -137,7 +137,7 @@ class Strawberry(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-strawberry.jpg'))
+        image_to_use = image.load(resource_filename('tamagotchi_tandersen', 'assets/pixel-strawberry.jpg'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:

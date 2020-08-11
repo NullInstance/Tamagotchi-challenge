@@ -1,7 +1,7 @@
 import pytest
 
-from tamagotchi.classes.game_board import GameBoard
-from tamagotchi.abstract.actor import Actor
+from tamagotchi_tandersen.classes.game_board import GameBoard
+from tamagotchi_tandersen.abstract.actor import Actor
 
 
 class TestGameBoard:

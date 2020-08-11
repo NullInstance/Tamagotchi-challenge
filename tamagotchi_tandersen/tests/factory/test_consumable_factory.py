@@ -1,8 +1,8 @@
 import pytest
 
-from tamagotchi.factory.consumable_factory import ConsumableFactory
+from tamagotchi_tandersen.factory.consumable_factory import ConsumableFactory
 
-from tamagotchi.classes.food import Apple, Pear, Strawberry
+from tamagotchi_tandersen.classes.food import Apple, Pear, Strawberry
 
 class TestConsumableFactory:
 

@@ -118,7 +118,7 @@ class Pet(Actor):
             self.state_timer = 0
             self.animation_state_max_timer = 5
             self.image = transform.scale(image.load(
-                resource_filename('tamagotchi', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
+                resource_filename('tamagotchi_tandersen', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
 
     def die(self):
         """
@@ -218,13 +218,13 @@ class Pet(Actor):
         
         if current_age == Age.MIDDLEAGE:
             return transform.scale(image.load(
-                resource_filename('tamagotchi', 'assets/fox-middle.png')), (self.image_width, self.image_height))
+                resource_filename('tamagotchi_tandersen', 'assets/fox-middle.png')), (self.image_width, self.image_height))
         elif current_age == Age.ELDERLY:
             return transform.scale(image.load(
-                resource_filename('tamagotchi', 'assets/fox-old.png')), (self.image_width, self.image_height))
+                resource_filename('tamagotchi_tandersen', 'assets/fox-old.png')), (self.image_width, self.image_height))
         elif current_age == Age.DECEASED:
             return transform.scale(image.load(
-                resource_filename('tamagotchi', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
+                resource_filename('tamagotchi_tandersen', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
         else:
             return transform.scale(image.load(
-                resource_filename('tamagotchi', 'assets/cute-fox.png')), (self.image_width, self.image_height))
+                resource_filename('tamagotchi_tandersen', 'assets/cute-fox.png')), (self.image_width, self.image_height))
