@@ -1,9 +1,10 @@
-from src.abstract.consumable import Consumable
+from ..abstract.consumable import Consumable
 
-from src.classes.coordinate import Coordinate
+from .coordinate import Coordinate
 
 from pygame import image, transform, Surface
 
+from pkg_resources import resource_filename
 
 class Pear(Consumable):
     """
@@ -20,7 +21,7 @@ class Pear(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load("./assets/pixel-pear.png")
+        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-pear.png'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:
@@ -78,7 +79,7 @@ class Apple(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load("./assets/pixel-apple.jpg")
+        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-apple.jpg'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:
@@ -136,7 +137,7 @@ class Strawberry(Consumable):
         self.image_width = 30
         self.image_height = 30
 
-        image_to_use = image.load("./assets/pixel-strawberry.jpg")
+        image_to_use = image.load(resource_filename('tamagotchi', 'assets/pixel-strawberry.jpg'))
         self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
 
     def get_consumable_value(self) -> int:

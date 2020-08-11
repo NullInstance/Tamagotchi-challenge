@@ -1,8 +1,8 @@
-from src.abstract.consumable import Consumable
+from ..abstract.consumable import Consumable
 
-from src.classes.coordinate import Coordinate
+from ..classes.coordinate import Coordinate
 
-from src.enums.direction import Direction
+from ..enums.direction import Direction
 
 from pygame import draw, color, Surface
 from pygame.locals import Rect

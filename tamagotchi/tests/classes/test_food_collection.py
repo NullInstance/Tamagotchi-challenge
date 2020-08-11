@@ -1,6 +1,6 @@
 import pytest
 
-from src.classes.food import Pear, Apple, Strawberry
+from tamagotchi.classes.food import Pear, Apple, Strawberry
 
 
 class TestPear:

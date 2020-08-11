@@ -2,7 +2,7 @@ from abc import ABC
 
 from pygame import Surface
 
-from src.classes.coordinate import Coordinate
+from ..classes.coordinate import Coordinate
 
 class Consumable(ABC):
     """

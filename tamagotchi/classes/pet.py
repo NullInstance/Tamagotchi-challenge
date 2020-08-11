@@ -1,12 +1,14 @@
-from src.abstract.actor import Actor
-from src.abstract.consumable import Consumable
+from ..abstract.actor import Actor
+from ..abstract.consumable import Consumable
 
-from src.classes.coordinate import Coordinate
+from .coordinate import Coordinate
 
-from src.enums.actor_state import ActorState
-from src.enums.age import Age
+from ..enums.actor_state import ActorState
+from ..enums.age import Age
 
 from pygame import image, transform, Surface
+
+from pkg_resources import resource_listdir, resource_filename, resource_string
 
 class Pet(Actor):
     """
@@ -115,8 +117,8 @@ class Pet(Actor):
             self.energy = 100
             self.state_timer = 0
             self.animation_state_max_timer = 5
-            image_to_use = image.load("./assets/fox-sleeping.png")
-            self.image = transform.scale(image_to_use, (self.image_width, self.image_height))
+            self.image = transform.scale(image.load(
+                resource_filename('tamagotchi', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
 
     def die(self):
         """
@@ -215,10 +217,14 @@ class Pet(Actor):
         current_age = self.get_age()
         
         if current_age == Age.MIDDLEAGE:
-            return transform.scale(image.load("./assets/fox-middle.png"), (self.image_width, self.image_height))
+            return transform.scale(image.load(
+                resource_filename('tamagotchi', 'assets/fox-middle.png')), (self.image_width, self.image_height))
         elif current_age == Age.ELDERLY:
-            return transform.scale(image.load("./assets/fox-old.png"), (self.image_width, self.image_height))
+            return transform.scale(image.load(
+                resource_filename('tamagotchi', 'assets/fox-old.png')), (self.image_width, self.image_height))
         elif current_age == Age.DECEASED:
-            return transform.scale(image.load("./assets/fox-sleeping.png"), (self.image_width, self.image_height))
+            return transform.scale(image.load(
+                resource_filename('tamagotchi', 'assets/fox-sleeping.png')), (self.image_width, self.image_height))
         else:
-            return transform.scale(image.load("./assets/cute-fox.png"), (self.image_width, self.image_height))
+            return transform.scale(image.load(
+                resource_filename('tamagotchi', 'assets/cute-fox.png')), (self.image_width, self.image_height))

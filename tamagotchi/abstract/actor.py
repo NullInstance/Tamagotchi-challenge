@@ -1,6 +1,6 @@
 from abc import ABC
 
-from src.classes.coordinate import Coordinate
+from ..classes.coordinate import Coordinate
 
 class Actor(ABC):
     """

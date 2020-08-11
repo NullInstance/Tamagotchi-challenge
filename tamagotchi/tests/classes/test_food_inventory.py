@@ -1,9 +1,9 @@
 import pytest
 
-from src.classes.food_inventory import FoodInventory
-from src.classes.coordinate import Coordinate
+from tamagotchi.classes.food_inventory import FoodInventory
+from tamagotchi.classes.coordinate import Coordinate
 
-from src.abstract.consumable import Consumable
+from tamagotchi.abstract.consumable import Consumable
 
 class ExampleFood(Consumable):
     def __init__(self):
