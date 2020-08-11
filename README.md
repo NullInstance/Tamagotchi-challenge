@@ -3,26 +3,40 @@ A PyGame implementation of the Tamagotchi challenge
 
 ## Installation instructions
 
-Make sure to have python3 installed with the pip package installer.
+Make sure to have `python3.6` installed with the pip package installer.
+
+This is due to the limitations of pygame, it will fail to install for python3.8.
 
 You may also like to create a virtual environment to run it but it is not necessary.
 
-`pip3 install -r requirements.txt`
+`pip3.6 install -r requirements.txt`
 
 ## Running tests
 
 From the base of the Tamagotchi Challenge directory, you can run
 
-`python3 setup.py test`
+`python3.6 setup.py test`
 
 This will run all the available unit tests and will make sure the correct packages are accessible.
 
 ## Running the game
 
-Run in console
+For quick play, you can install the package from pypi
 
-`python3 setup.py install`
-`python3 -m tamagotchi`
+`pip3.6 install tamagotchi_tandersen`
+
+`python3.6 -m tamagotchi_tandersen`
+
+Run in console if you have the code
+
+`python3.6 setup.py install`
+
+`python3.6 -m tamagotchi`
+
+## Docker
+
+Parsing in the display to docker is not available to MacOS due to restrictions on the
+sandbox. For linux it is currently under development.
 
 ## Controls
 
