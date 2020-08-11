@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tamagotchi_tandersen", # Replace with your own username
-    version="1.0.0",
+    version="1.0.1",
     author="Tristan Andersen",
     description="My attempt at the Tamagotchi challenge",
     long_description=long_description,
